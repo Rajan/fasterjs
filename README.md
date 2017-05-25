@@ -6,9 +6,6 @@
 npm install
 
 # start mongodb
-mongod --dbpath path_to_database
-
-database folder is focus-gestor-orcamentos/server/database
 
 # start server in one console
 node server.js
@@ -34,4 +31,7 @@ npm run e2e
 # run all tests
 npm test
 ```
-# fasterjs
+# Credits
+https://github.com/patrickbolle/vuejs-boilerplate
+https://github.com/lrossy/vue-express-mongo-boilerplate
+https://github.com/gdomaradzki/focus-gestor-orcamentos
