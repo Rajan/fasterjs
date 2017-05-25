@@ -10,10 +10,10 @@ module.exports = {
     browser: true,
   },
   // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
-  extends: 'standard',
+  extends: ['vue'],
   // required to lint *.vue files
   plugins: [
-    'html'
+    'html', 'vue', 'vuefix'
   ],
   // add your custom rules here
   'rules': {
@@ -21,6 +21,8 @@ module.exports = {
     'arrow-parens': 0,
     // allow async-await
     'generator-star-spacing': 0,
+    'vue/jsx-uses-vars': 2,
+    "vuefix/vuefix": [2, {"auto": true}],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }
